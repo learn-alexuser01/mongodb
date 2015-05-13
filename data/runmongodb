@@ -1,0 +1,3 @@
+[ ! -d ./mongodb ] && mkdir mongodb
+#mongod --dbpath=`pwd`/mongodb
+mongod --dbpath=`pwd`/mongodb --storageEngine=wiredTiger

@@ -1,0 +1,7 @@
+[ ! -d ./node_modules ] && npm install
+APP=$1
+
+[ -z $APP ] && APP='app.js'
+
+$(which nodemon) "$APP" || $(which node) "$APP"
+

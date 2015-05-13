@@ -1,0 +1,2 @@
+DATE=`date +%Y%m%d`
+mongo-edu -u alex2006hw@gmail.com --uz --co --cw -d video/$DATE

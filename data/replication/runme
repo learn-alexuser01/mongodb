@@ -1,0 +1,8 @@
+mongod --dbpath 1 --port 27001 --smallfiles --oplogSize 50 --replSet local 2>&1 > log/1.log &
+
+mongod --dbpath 2 --port 27002 --smallfiles --oplogSize 50 --replSet local 2>&1 > log/2.log &
+
+mongod --dbpath 3 --port 27003 --smallfiles --oplogSize 50 --replSet local 2>&1 > log/3.log &
+
+echo "to stop mongo : ps -ef |grep mongo | awk '{ print $2}' | xargs kill -9"
+
